@@ -93,7 +93,8 @@ YouTubeData.Account = {
             user_videos_player2.push(user_uploaded_videos[i])
             }
         }
-        var videoArr = [];
+
+        videoArr = [];
         for(var i = 0; i < response.items.length; i++) {
           videoArr[i] = response.items[i].id;
         }
@@ -102,25 +103,8 @@ YouTubeData.Account = {
         var myVideo2 = ["l-gQLqv9f4o", "OPdbdjctx2I", "I3anjdi8lB4", "veFZPU8G8EU", "_ptjpy_oShY", "ORhEE9VVg", "za2rJeIa9KQ", "yHvFL92RXP4", "b1XGPvbWn0A"]
 
 
-        VideoPlayer.main(videoArr);
-        // setTimeout(function() { $('#player').fadeOut(2000)
-        //                         $('#player').fadeIn(4000)
-        //                       }, 10000);
-        // setTimeout(function() { $('#player').fadeOut(2000)
-        //                         $('#player').fadeIn(4000)
-        //                       }, 22000);
-        // setTimeout(function() { $('#player').fadeOut(2000)
-        //                         $('#player').fadeIn(4000)
-        //                       }, 34000);
-        // setTimeout(function() { $('#player').fadeOut(5000)
-        //                         $('#player').fadeIn(5000)
-        //                       }, 40000);
-        // setTimeout(function() { $('#player').fadeOut(5000)
-        //                         $('#player').fadeIn(5000)
-        //                       }, 50000);
-        // setTimeout(function() { $('#player').fadeOut(5000)
-        //                         $('#player').fadeIn(5000)
-        //                       }, 60000);
+
+
       }
     });
   }

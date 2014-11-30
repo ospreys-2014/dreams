@@ -37,7 +37,7 @@ var GoogleAuth = {}
         // });
 
 
-        // GoogleAuth.Controller.loadAPIClientInterfaces();
+        GoogleAuth.Controller.loadAPIClientInterfaces();
 
         var token = authResult.access_token;
         console.log(token)
@@ -112,6 +112,7 @@ GoogleAuth.Controller.loadAPIClientInterfaces = function() {
       // After both client interfaces load, use the Data API to request
       // information about the authenticated user's channel.
       YouTubeData.Account.getUserChannel();
+      setTimeout(function(){VideoPlayer.main(videoArr)}, 10000);
       // $('#dreams-select').addClass('open');
 
     });
