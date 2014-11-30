@@ -70,6 +70,8 @@ YouTubeData.Account = {
 
     request.execute(function(response) {
       if ('error' in response) {
+        console.log(error);
+        console.log(response);
         GoogleAuth.View.displayMessage(response.error.message);
       } else {
         // Get the jQuery wrapper for #video-list once outside the loop.
@@ -97,6 +99,7 @@ YouTubeData.Account = {
 
         VideoPlayer.main(user_videos_player1);
         VideoPlayer2.main(user_videos_player2);
+        VideoPlayer.main(response.items);
 
       }
     });
